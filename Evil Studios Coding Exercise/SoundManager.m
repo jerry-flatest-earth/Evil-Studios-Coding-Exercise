@@ -22,6 +22,7 @@
     return sSoundObject;
 }
 
+//initialize player and play audio
 -(void)playAudio:(NSURL *)url
 {
     _audioPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
@@ -31,10 +32,13 @@
     
 }
 
+//stop audio
 -(void)stopAudio
 {
     [_audioPlayer stop];
 }
+
+//fire notification when playback stops
 -(void)audioPlayerDidFinishPlaying:
 (AVAudioPlayer *)player successfully:(BOOL)flag
 {
