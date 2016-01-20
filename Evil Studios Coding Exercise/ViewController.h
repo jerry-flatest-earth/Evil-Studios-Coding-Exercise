@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController <AVAudioPlayerDelegate>
+@interface ViewController : UIViewController 
 
 @property (strong, nonatomic) IBOutlet UIButton *playStopButton;
 
