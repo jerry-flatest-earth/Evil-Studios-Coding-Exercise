@@ -23,8 +23,6 @@ SoundManager *soundManager;
 - (void)viewDidLoad {
     [super viewDidLoad];
     soundManager = [SoundManager soundObject];
-    soundManager.audioPlayer.delegate = self;
-    [soundManager.audioPlayer  prepareToPlay];
     [_playStopButton addTarget:self action:@selector(playStop) forControlEvents:UIControlEventTouchUpInside];
     
     //Change the button state back when playback ends
